@@ -5,10 +5,12 @@ import Register from '../pages/auth/Register';
 import Unauthorized from '../pages/Unauthorized';
 import AdminStub from '../pages/admin/AdminStub';
 import ProtectedRoute from '../components/common/ProtectedRoute';
+import Shop from '../pages/Shop';
 
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/shop" element={<Shop />} />
     <Route path="/login" element={<Login />} />
     <Route path="/register" element={<Register />} />
     <Route path="/unauthorized" element={<Unauthorized />} />
